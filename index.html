@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Computational Design of Materials for Energy Applications (CoDe MaTE) Lab — computational methods for combinatorial crystals, MOFs, and alloys."
+    />
+    <title>CoDe MaTE Lab | Computational Design of Materials for Energy Applications</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Computational Design of Materials for Energy Applications (CoDe MaTE) Lab</a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" id="nav-toggle">
+          Menu
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="more.html">More</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div>
+          <p class="hero-lead" id="hero-title">Home: Welcome</p>
+          <h1>Research Overview</h1>
+          <p class="hero-lead">
+            At the CoDe MaTE Lab, computers are our friends. We use and develop computational methods to accelerate the discovery of combinatorial crystals for energy and environmental applications.
+          </p>
+        </div>
+        <div class="hero-media">
+          <img
+            src="assets/images/Lab-Home-Picture.jpg"
+            alt="CoDe MaTE Lab — research imagery"
+            width="640"
+            height="400"
+          />
+        </div>
+      </div>
+    </section>
+
+    <main id="main">
+      <section class="intro" aria-labelledby="overview-heading">
+        <h2 class="section-title" id="overview-heading">About our research</h2>
+        <p>
+          By &ldquo;combinatorial crystals&rdquo; we mean crystalline materials that can be conceptually thought of as a combination of interchangeable chemical &ldquo;building blocks&rdquo; mapped onto well-defined geometrical patterns. Examples include emerging materials such as metal-organic frameworks (MOFs) and more established ones such as metal alloys. In the case of MOFs, the building blocks are organic linkers and inorganic clusters, while for metal alloys the building blocks are atoms.
+        </p>
+        <p>
+          Their combinatorics means that there could be millions of different variations of these crystals, whose properties depend on the exact chemistry and geometrical arrangement of their building blocks. Exploring all these combinations solely by traditional synthesis and experimental testing is untractable.
+        </p>
+        <p>
+          By using a variety of computational methods, the CoDe MaTE Lab aims to anticipate the properties of combinatorial crystals before their synthesis is even attempted. This way we help experimentalists focus their efforts on compositions that have a higher probability to present groundbreaking properties. We also help experimentalists gain a deeper understanding of materials they have already synthesized and tested by using molecular simulation as an atomic-resolution &ldquo;theoretical microscope,&rdquo; which can examine relevant phenomena at the nanoscale.
+        </p>
+      </section>
+
+      <h2 class="section-title" id="research-areas">Research areas</h2>
+      <div class="research-grid">
+        <article class="card">
+          <div class="card-media">
+            <img
+              src="assets/images/Free-energy-Web.jpg"
+              alt="Illustration related to MOF thermodynamics and free energy"
+              width="400"
+              height="300"
+              loading="lazy"
+            />
+          </div>
+          <div class="card-body">
+            <h3>Prediction of MOF synthetic likelihood</h3>
+            <p>
+              &ldquo;Computational synthesis&rdquo; to create databases of hypothesized MOFs, which can be subsequently screened for properties of interest using computational methods such as molecular simulation, is an established step toward accelerated MOF discovery. The CoDe MaTE Lab uses the Topology-Based Crystal Constructor (ToBaCCo) code to create these databases. A challenge, however, is to determine how likely MOFs created in the computer are to be synthesized in the bench lab. To tackle this challenge we are developing computational tools for large-scale calculation of the thermodynamics and kinetics of MOF formation. Recently, we achieved free energy calculations on a 10,000-MOF database featuring both hypothesized and experimentally observed structures. We found the latter structures to cluster below a 4 kJ/mol threshold. Currently, we are exploring the effects of typical synthesis solvents on MOF crystal stability.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img
+              src="assets/images/catalysis-web.jpg"
+              alt="Conceptual illustration of catalysis and reactors"
+              width="400"
+              height="300"
+              loading="lazy"
+            />
+          </div>
+          <div class="card-body">
+            <h3>Metal alloy catalysts for non-conventional reactors</h3>
+            <p>
+              Non-conventional reactors can overcome some of the challenges the chemical industry faces with certain chemical transformations. For example, membrane reactors could overcome equilibrium limitations as well as decouple reaction steps that constrain catalyst design. Plasma reactors could also decouple reaction steps by performing some of them in the plasma phase. Ultimately, these kinds of reactors could allow some &ldquo;harsh&rdquo; chemical processes to be performed at mild conditions. To optimize these processes, new catalysts are needed, and alloying metals is a promising way to obtain all the desired catalyst characteristics with a single material. Given the huge &ldquo;compositional space&rdquo; of alloys, the CoDe MaTE Lab uses computational methods to guide experiments and anticipate what compositions could provide significant improvement over pure metals. For example, in recent work the CoDe MaTE Lab identified V<sub>0.25</sub>Fe<sub>0.75</sub> as an alloy that could improve nitrogen dissociation and permeation over pure vanadium, which is relevant to the catalytic membrane in reactors aiming to couple CO<sub>2</sub> enrichment of flue gases with NH<sub>3</sub> synthesis.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img
+              src="assets/images/ML-web_edited_edited.jpg"
+              alt="Machine learning and materials design"
+              width="400"
+              height="300"
+              loading="lazy"
+            />
+          </div>
+          <div class="card-body">
+            <h3>Machine learning-enabled material design</h3>
+            <p>
+              Molecular simulation has demonstrated its ability to accelerate the discovery of combinatorial crystals by enabling the prediction of application-relevant properties for hypothesized compositions encountered in material databases, before any synthesis is attempted. These predictions can identify a smaller set of &ldquo;promising&rdquo; materials on which experiments can focus, hence saving time and money. However, some properties are too time consuming to predict even with molecular simulation. Thus, the CoDe MaTE Lab is looking to adapt machine learning techniques to the prediction of material properties as a way to &ldquo;pre-screen&rdquo; material databases, reducing the number of materials on which to run molecular simulations. Recently, we have demonstrated that a single deep neural network (DNN) can be trained to predict full adsorption isotherms for multiple molecules in MOFs — a capability we are using to screen MOFs for non-thermal chemical separations.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="contact-strip">
+        <div>
+          <strong>Contact</strong><br />
+          <a href="tel:+13033842319">+1 (303) 384-2319</a>
+        </div>
+        <div>
+          <a href="https://twitter.com" rel="noopener noreferrer" title="Replace this URL with the lab Twitter profile">Twitter</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>
+          &copy; <span id="year"></span> Computational Design of Materials for Energy Applications (CoDe MaTE Lab).
+        </p>
+        <p>Static site for GitHub hosting — content aligned with the prior Wix site.</p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
